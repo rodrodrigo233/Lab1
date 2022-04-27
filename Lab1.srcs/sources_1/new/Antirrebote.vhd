@@ -11,17 +11,17 @@ architecture behave of antirrebote is
 signal valor_inicial : std_logic;
 signal flag : std_logic;
 begin
-   p1:process(rst,clk,flag,input,valor_inicial)
+   p1:process(rst,clk,flag,input)
    variable c: integer :=0;
    begin
     if(rst='0') then
         c:=0;
         flag<='0';
         output<='0';
-    elsif (rising_edge(clk) )  then
+    elsif (rising_edge(clk))  then
                     if (flag='1') then
                         c:=c+1;
-                        if(c>= 5)then             --Delay de 40 ms (para reloj de 33.33MHz ) 1333200
+                        if(c>=1333200)then             --Delay de 40 ms (para reloj de 33.33MHz ) 1333200
                             c:=0;
                             if(input= valor_inicial)then
                                 output<=input;
@@ -35,7 +35,7 @@ begin
      
      p2: process(input,flag)
      begin
-        if(flag='0' ) then
+        if(flag='0') then
             flag<='1';
             valor_inicial<=input;
         end if;

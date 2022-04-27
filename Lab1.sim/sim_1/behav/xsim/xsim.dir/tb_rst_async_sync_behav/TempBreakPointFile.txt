@@ -1,0 +1,9 @@
+Breakpoint File Version 1.0
+18 true C:/Xilinx_clase/Lab1/Lab1.srcs/sources_1/new/rst_async_sync.vhd
+19 true C:/Xilinx_clase/Lab1/Lab1.srcs/sources_1/new/rst_async_sync.vhd
+20 true C:/Xilinx_clase/Lab1/Lab1.srcs/sources_1/new/rst_async_sync.vhd
+21 true C:/Xilinx_clase/Lab1/Lab1.srcs/sources_1/new/rst_async_sync.vhd
+22 true C:/Xilinx_clase/Lab1/Lab1.srcs/sources_1/new/rst_async_sync.vhd
+23 true C:/Xilinx_clase/Lab1/Lab1.srcs/sources_1/new/rst_async_sync.vhd
+24 true C:/Xilinx_clase/Lab1/Lab1.srcs/sources_1/new/rst_async_sync.vhd
+27 true C:/Xilinx_clase/Lab1/Lab1.srcs/sources_1/new/rst_async_sync.vhd

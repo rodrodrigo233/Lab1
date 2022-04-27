@@ -20,7 +20,7 @@ architecture test of tb_antirrebote is
         rst1<='1';
         wait for 10 ms;
         input1<='1';
-         wait for 10 ms;
+        wait for 10 ms;
         for i in 5 downto 0 loop
         input1<= not(input1);    --simulo el rebote 
         wait for 5 ms;

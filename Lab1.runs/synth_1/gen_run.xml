@@ -4,8 +4,6 @@
   <File Type="REPORTS-TCL" Name="antirrebote_reports.tcl"/>
   <File Type="RDS-RDS" Name="antirrebote.vds"/>
   <File Type="RDS-DCP" Name="antirrebote.dcp"/>
-  <File Type="RDS-UTIL" Name="antirrebote_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="antirrebote_utilization_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/Antirrebote.vhd">
