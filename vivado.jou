@@ -2,21 +2,83 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Tue Apr 26 17:43:13 2022
-# Process ID: 4952
+# Start of session at: Thu Apr 28 18:00:06 2022
+# Process ID: 12536
 # Current directory: C:/Xilinx_clase/Lab1
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7860 C:\Xilinx_clase\Lab1\Lab1.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9720 C:\Xilinx_clase\Lab1\Lab1.xpr
 # Log file: C:/Xilinx_clase/Lab1/vivado.log
 # Journal file: C:/Xilinx_clase/Lab1\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project C:/Xilinx_clase/Lab1/Lab1.xpr
 update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+close [ open C:/Xilinx_clase/Lab1/Lab1.srcs/sources_1/new/freq_divider.vhd w ]
+add_files C:/Xilinx_clase/Lab1/Lab1.srcs/sources_1/new/freq_divider.vhd
+update_compile_order -fileset sources_1
 # Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
 set_property source_mgmt_mode None [current_project]
-set_property top tb_rst_async_sync [get_filesets sim_1]
+set_property top freq_divider [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Xilinx_clase/Lab1/Lab1.srcs/sim_1/new/tb_freq_divider.vhd w ]
+add_files -fileset sim_1 C:/Xilinx_clase/Lab1/Lab1.srcs/sim_1/new/tb_freq_divider.vhd
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_freq_divider [get_filesets sim_1]
 set_property top_lib xil_defaultlib [get_filesets sim_1]
 # Re-enabling previously disabled source management mode.
 set_property source_mgmt_mode All [current_project]
 update_compile_order -fileset sim_1
+refresh_design
 launch_simulation
+source tb_freq_divider.tcl
+run all
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+close_sim
+launch_simulation
+launch_simulation
+source tb_freq_divider.tcl
+run all
+restart
+run 100 ns
+restart
+run 13 s
+restart
+run 2 s
+restart
+close_sim
+launch_simulation
+source tb_freq_divider.tcl
+run 2 s
+restart
+run 600 ms
+close_sim
+launch_simulation
+source tb_freq_divider.tcl
+run 600 ms
+restart
+close_sim
+launch_simulation
+source tb_freq_divider.tcl
+run 2 s
+close_sim
+launch_simulation
+source tb_freq_divider.tcl
+run 2 s
+close_sim
+launch_simulation
+source tb_freq_divider.tcl
+run 600 ms
+close_sim
+launch_simulation
+source tb_freq_divider.tcl
+run 600 ms
+restart
+run 12 s
+close_sim
