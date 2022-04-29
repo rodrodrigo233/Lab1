@@ -7,31 +7,30 @@ port(
     output        : out std_logic);
 end  Antirrebote_v2;
 
-architecture behave of Antirrebote_v2 is
-    signal valor_inicial : std_logic;
+architecture behave of Antirrebote_v2 is 
+signal copia_input : std_logic ;
     begin 
-    process(clk,rst,input,valor_inicial)
+    copia_input<=input;
+    process(clk,rst,copia_input)
     variable flag : boolean :=false;
     variable c : integer :=0;
         begin
-            if(rst='0') then
+            if(rst='0') then 
                 output<='0';
                 flag:=false;
                 c:=0;
-            elsif (rising_edge(input) or falling_edge(input)) then
-                if (flag=false)then
-                    valor_inicial<=input;
-                    flag:=true;
-                end if;
-            elsif (rising_edge(clk)) then
-                if (flag=true) then
+            
+            elsif (rising_edge(clk) and (flag)) then
                     c:=c+1;
-                    if(c>=1333200)then
+                    if(c>=1333333)then
                         c:=0;
-                        if(valor_inicial = input)then
-                            output<=valor_inicial;
-                            flag:=false;
-                        end if;
+                        output<=input;
+                        flag:=false;
+                    end if;
+            else
+                if (rising_edge(copia_input) or falling_edge(copia_input)) then 
+                    if (flag=false)then
+                        flag:=true;
                     end if;
                 end if;
             end if;

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_arrebote_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="tb_arrebote" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="100001000000000fs"></ZoomEndTime>
+      <Cursor1Time time="100001000000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="116"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="5" />
+   <wvobject fp_name="/tb_arrebote/input1" type="logic">
+      <obj_property name="ElementShortName">input1</obj_property>
+      <obj_property name="ObjectShortName">input1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_arrebote/rst1" type="logic">
+      <obj_property name="ElementShortName">rst1</obj_property>
+      <obj_property name="ObjectShortName">rst1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_arrebote/clk1" type="logic">
+      <obj_property name="ElementShortName">clk1</obj_property>
+      <obj_property name="ObjectShortName">clk1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_arrebote/output1" type="logic">
+      <obj_property name="ElementShortName">output1</obj_property>
+      <obj_property name="ObjectShortName">output1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_arrebote/clk_time" type="other">
+      <obj_property name="ElementShortName">clk_time</obj_property>
+      <obj_property name="ObjectShortName">clk_time</obj_property>
+   </wvobject>
+</wave_config>

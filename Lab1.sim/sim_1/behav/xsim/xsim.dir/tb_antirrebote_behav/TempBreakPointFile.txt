@@ -1,2 +1,0 @@
-Breakpoint File Version 1.0
-39 true C:/Xilinx_clase/Lab1/Lab1.srcs/sources_1/new/Antirrebote.vhd
