@@ -1,16 +1,1 @@
 Breakpoint File Version 1.0
-16 true C:/Xilinx_clase/Lab1/Lab1.srcs/sim_1/new/tb_sinc.vhd
-17 true C:/Xilinx_clase/Lab1/Lab1.srcs/sim_1/new/tb_sinc.vhd
-18 true C:/Xilinx_clase/Lab1/Lab1.srcs/sim_1/new/tb_sinc.vhd
-19 true C:/Xilinx_clase/Lab1/Lab1.srcs/sim_1/new/tb_sinc.vhd
-21 true C:/Xilinx_clase/Lab1/Lab1.srcs/sim_1/new/tb_sinc.vhd
-20 true C:/Xilinx_clase/Lab1/Lab1.srcs/sim_1/new/tb_sinc.vhd
-23 true C:/Xilinx_clase/Lab1/Lab1.srcs/sim_1/new/tb_sinc.vhd
-24 true C:/Xilinx_clase/Lab1/Lab1.srcs/sim_1/new/tb_sinc.vhd
-25 true C:/Xilinx_clase/Lab1/Lab1.srcs/sim_1/new/tb_sinc.vhd
-26 true C:/Xilinx_clase/Lab1/Lab1.srcs/sim_1/new/tb_sinc.vhd
-27 true C:/Xilinx_clase/Lab1/Lab1.srcs/sim_1/new/tb_sinc.vhd
-28 true C:/Xilinx_clase/Lab1/Lab1.srcs/sim_1/new/tb_sinc.vhd
-29 true C:/Xilinx_clase/Lab1/Lab1.srcs/sim_1/new/tb_sinc.vhd
-30 true C:/Xilinx_clase/Lab1/Lab1.srcs/sim_1/new/tb_sinc.vhd
-31 true C:/Xilinx_clase/Lab1/Lab1.srcs/sim_1/new/tb_sinc.vhd

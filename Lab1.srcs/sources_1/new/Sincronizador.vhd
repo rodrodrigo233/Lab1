@@ -2,7 +2,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 
 entity sincronizador is
-generic( q_ff: integer:=2); --Cantidad de FF
+generic( q_ff: integer:=2); --Cantidad de FF que se desean
 port(
     clk,rst,input: in std_logic;
     output         : out std_logic);
@@ -16,16 +16,17 @@ architecture estructura of sincronizador is
         q : out std_logic);
    end component;
    begin
-   sinc:for i in (q_ff-1) downto 0 generate
-        if1:if (i=(q_ff-1)) generate
+   sinc:for i in (q_ff-1) downto 0 generate         -- Se generan los flip flop
+        if1:if (i=(q_ff-1)) generate          -- El primer flip flop y el ultimo poseen conexiones al exterior       
             u:ffd port map(clk => clk, rst=>rst, d=>input,q=>s(i));
         end generate if1;
-        if2:if(i=0)generate
+        if2:if(i=0)generate            
             u:ffd port map(clk => clk, rst=>rst, d=>s(i+1),q=>output);
         end generate if2;
-        ifn:if (((q_ff-1)>i) and (i>0))generate 
+        ifn:if (((q_ff-1)>i) and (i>0))generate -- flip flop internos que no se conectan al exterior
          u:ffd port map(clk => clk, rst=>rst, d=>s(i+1),q=>s(i));
          end generate ifn;
    end generate sinc;
  end estructura;
+   
    

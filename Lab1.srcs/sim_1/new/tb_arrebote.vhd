@@ -12,7 +12,7 @@ constant clk_time : time :=30 ns;
     begin
     
 uut: entity work.arrebote port map(clk=>clk1,rst=>rst1,input=>input1,output=>output1);
-    clock:process
+    clock:process           --Clock de T=60 ns
         begin
         clk1<=not clk1;
         wait for clk_time;
@@ -22,14 +22,18 @@ uut: entity work.arrebote port map(clk=>clk1,rst=>rst1,input=>input1,output=>out
             wait for 10 ms;
             rst1<='1';
             wait for 10 ms;
-            input1<='0';
+            input1<='1';        -- primer cambio de entrada
             wait for 10 ms;
-           for i in 5 downto 0 loop
+           for i in 7 downto 0 loop --Simulación de rebote
+           input1<= not input1;         
+           wait for 2 ms;
+           end loop; 
+           wait for 40 ms;
+           for i in 6 downto 0 loop     --Simulación de cambio y rebote
            input1<= not input1;
            wait for 2 ms;
            end loop; 
            wait for 40 ms;
-           wait for 12000 ms;
        
             assert false
                     report "Simulación Terminada"
