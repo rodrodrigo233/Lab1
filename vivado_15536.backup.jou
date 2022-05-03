@@ -1,0 +1,69 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon May  2 19:46:13 2022
+# Process ID: 15536
+# Current directory: C:/Xilinx_clase/Lab1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8488 C:\Xilinx_clase\Lab1\Lab1.xpr
+# Log file: C:/Xilinx_clase/Lab1/vivado.log
+# Journal file: C:/Xilinx_clase/Lab1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Xilinx_clase/Lab1/Lab1.xpr
+launch_simulation
+synth_design -rtl -name rtl_1
+launch_simulation
+launch_simulation
+open_wave_config C:/Xilinx_clase/Lab1/arreboteflcpostitivo.wcfg
+open_wave_config C:/Xilinx_clase/Lab1/partea.wcfg
+source test_lfsr.tcl
+run 300 ms
+current_wave_config {partea.wcfg}
+add_wave {{/test_lfsr/uut}} 
+restart
+run 300 ms
+restart
+run 100 us
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config C:/Xilinx_clase/Lab1/arreboteflcpostitivo.wcfg
+open_wave_config C:/Xilinx_clase/Lab1/partea.wcfg
+source test_lfsr.tcl
+current_wave_config {partea.wcfg}
+add_wave {{/test_lfsr/uut}} 
+run 100 us
+close_sim
+launch_simulation
+open_wave_config C:/Xilinx_clase/Lab1/arreboteflcpostitivo.wcfg
+open_wave_config C:/Xilinx_clase/Lab1/partea.wcfg
+source test_lfsr.tcl
+run 100 us
+restart
+current_wave_config {partea.wcfg}
+add_wave {{/test_lfsr/uut}} 
+run 100 us
+restart
+run 300 us
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top freq_divider [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_freq_divider [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+close_sim

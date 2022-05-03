@@ -1,0 +1,185 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Apr 30 22:52:11 2022
+# Process ID: 14680
+# Current directory: C:/Xilinx_clase/Lab1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10932 C:\Xilinx_clase\Lab1\Lab1.xpr
+# Log file: C:/Xilinx_clase/Lab1/vivado.log
+# Journal file: C:/Xilinx_clase/Lab1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Xilinx_clase/Lab1/Lab1.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Xilinx_clase/Lab1/arreboteflcpostitivo.wcfg
+source tb_sinc.tcl
+remove_bps -file {C:/Xilinx_clase/Lab1/Lab1.srcs/sim_1/new/tb_sinc.vhd} -line 16
+remove_bps -file {C:/Xilinx_clase/Lab1/Lab1.srcs/sim_1/new/tb_sinc.vhd} -line 17
+remove_bps -file {C:/Xilinx_clase/Lab1/Lab1.srcs/sim_1/new/tb_sinc.vhd} -line 18
+remove_bps -file {C:/Xilinx_clase/Lab1/Lab1.srcs/sim_1/new/tb_sinc.vhd} -line 19
+remove_bps -file {C:/Xilinx_clase/Lab1/Lab1.srcs/sim_1/new/tb_sinc.vhd} -line 21
+remove_bps -file {C:/Xilinx_clase/Lab1/Lab1.srcs/sim_1/new/tb_sinc.vhd} -line 20
+remove_bps -file {C:/Xilinx_clase/Lab1/Lab1.srcs/sim_1/new/tb_sinc.vhd} -line 23
+remove_bps -file {C:/Xilinx_clase/Lab1/Lab1.srcs/sim_1/new/tb_sinc.vhd} -line 24
+remove_bps -file {C:/Xilinx_clase/Lab1/Lab1.srcs/sim_1/new/tb_sinc.vhd} -line 25
+remove_bps -file {C:/Xilinx_clase/Lab1/Lab1.srcs/sim_1/new/tb_sinc.vhd} -line 26
+remove_bps -file {C:/Xilinx_clase/Lab1/Lab1.srcs/sim_1/new/tb_sinc.vhd} -line 27
+remove_bps -file {C:/Xilinx_clase/Lab1/Lab1.srcs/sim_1/new/tb_sinc.vhd} -line 28
+remove_bps -file {C:/Xilinx_clase/Lab1/Lab1.srcs/sim_1/new/tb_sinc.vhd} -line 29
+close_sim
+launch_simulation
+open_wave_config C:/Xilinx_clase/Lab1/arreboteflcpostitivo.wcfg
+source tb_sinc.tcl
+run 300 ms
+synth_design -rtl -name rtl_1
+close_sim
+launch_simulation
+open_wave_config C:/Xilinx_clase/Lab1/arreboteflcpostitivo.wcfg
+source tb_sinc.tcl
+run 300 ms
+current_wave_config {arreboteflcpostitivo.wcfg}
+add_wave {{/tb_sinc}} 
+restart
+run 300 ms
+save_wave_config {C:/Xilinx_clase/Lab1/arreboteflcpostitivo.wcfg}
+save_wave_config {C:/Xilinx_clase/Lab1/partea.wcfg}
+add_files -fileset sim_1 -norecurse C:/Xilinx_clase/Lab1/partea.wcfg
+set_property xsim.view {C:/Xilinx_clase/Lab1/arreboteflcpostitivo.wcfg C:/Xilinx_clase/Lab1/partea.wcfg} [get_filesets sim_1]
+close_sim
+launch_simulation
+open_wave_config C:/Xilinx_clase/Lab1/arreboteflcpostitivo.wcfg
+open_wave_config C:/Xilinx_clase/Lab1/partea.wcfg
+source tb_sinc.tcl
+restart
+run 300 ms
+current_wave_config {partea.wcfg}
+add_wave {{/tb_sinc/uut/s}} 
+restart
+run 300 ms
+restart
+run 300 ms
+close_sim
+launch_simulation
+open_wave_config C:/Xilinx_clase/Lab1/arreboteflcpostitivo.wcfg
+open_wave_config C:/Xilinx_clase/Lab1/partea.wcfg
+source tb_sinc.tcl
+restart
+run 300 ms
+restart
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Arrebote [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_arrebote [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+refresh_design
+launch_simulation
+open_wave_config C:/Xilinx_clase/Lab1/arreboteflcpostitivo.wcfg
+open_wave_config C:/Xilinx_clase/Lab1/partea.wcfg
+source tb_arrebote.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Xilinx_clase/Lab1/arreboteflcpostitivo.wcfg
+open_wave_config C:/Xilinx_clase/Lab1/partea.wcfg
+source tb_arrebote.tcl
+run 300 ms
+current_wave_config {partea.wcfg}
+add_wave {{/tb_arrebote/uut}} 
+restart
+run 300 ms
+close_sim
+launch_simulation
+open_wave_config C:/Xilinx_clase/Lab1/arreboteflcpostitivo.wcfg
+open_wave_config C:/Xilinx_clase/Lab1/partea.wcfg
+source tb_arrebote.tcl
+current_wave_config {partea.wcfg}
+add_wave {{/tb_arrebote/uut}} 
+run 300 ms
+add_bp {C:/Xilinx_clase/Lab1/Lab1.srcs/sources_1/new/Arrebote.vhd} 22
+restart
+run 300 ms
+add_bp {C:/Xilinx_clase/Lab1/Lab1.srcs/sources_1/new/Arrebote.vhd} 33
+restart
+run 300 ms
+add_bp {C:/Xilinx_clase/Lab1/Lab1.srcs/sources_1/new/Arrebote.vhd} 35
+add_bp {C:/Xilinx_clase/Lab1/Lab1.srcs/sources_1/new/Arrebote.vhd} 37
+run 300 ms
+run 300 ms
+restart
+run 300 ms
+run 300 ms
+run 300 ms
+run 300 ms
+run 300 ms
+run 300 ms
+restart
+run 300 ms
+run 300 ms
+run 300 ms
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+run 10 ms
+save_wave_config {C:/Xilinx_clase/Lab1/partea.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Xilinx_clase/Lab1/arreboteflcpostitivo.wcfg
+open_wave_config C:/Xilinx_clase/Lab1/partea.wcfg
+source tb_arrebote.tcl
+remove_bps -file {C:/Xilinx_clase/Lab1/Lab1.srcs/sources_1/new/Arrebote.vhd} -line 33
+remove_bps -file {C:/Xilinx_clase/Lab1/Lab1.srcs/sources_1/new/Arrebote.vhd} -line 35
+remove_bps -file {C:/Xilinx_clase/Lab1/Lab1.srcs/sources_1/new/Arrebote.vhd} -line 37
+add_bp {C:/Xilinx_clase/Lab1/Lab1.srcs/sources_1/new/Arrebote.vhd} 36
+add_bp {C:/Xilinx_clase/Lab1/Lab1.srcs/sources_1/new/Arrebote.vhd} 38
+add_bp {C:/Xilinx_clase/Lab1/Lab1.srcs/sources_1/new/Arrebote.vhd} 34
+current_wave_config {partea.wcfg}
+add_wave {{/tb_arrebote/uut}} 
+run 300 ms
+run 300 ms
+run 300 ms
+run 300 ms
+run 300 ms
+run 300 ms
+close_sim
+launch_simulation
+open_wave_config C:/Xilinx_clase/Lab1/arreboteflcpostitivo.wcfg
+open_wave_config C:/Xilinx_clase/Lab1/partea.wcfg
+source tb_arrebote.tcl
+run 300 ms
+run 300 ms
+run 300 ms
+run 300 ms
+run 300 ms
+run 300 ms
+run 300 ms
+run 300 ms
+add_bp {C:/Xilinx_clase/Lab1/Lab1.srcs/sources_1/new/Arrebote.vhd} 40
+restart
+run 300 ms
+add_bp {C:/Xilinx_clase/Lab1/Lab1.srcs/sources_1/new/Arrebote.vhd} 35
+remove_bps -file {C:/Xilinx_clase/Lab1/Lab1.srcs/sources_1/new/Arrebote.vhd} -line 34
+restart
+remove_bps -file {C:/Xilinx_clase/Lab1/Lab1.srcs/sources_1/new/Arrebote.vhd} -line 36
+run 300 ms
+run 300 ms
+run 300 ms
+run 300 ms
+run 300 ms
+run 300 ms
+close_sim

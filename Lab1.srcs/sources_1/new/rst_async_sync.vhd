@@ -15,6 +15,7 @@ architecture behave of rst_async_sync is
     begin
     asyn_ass: process(rst, clk)
         begin
+         out_rst <= sys_rst_i(rst_width-1);  
          if (rst= rst_active_value) then
              sys_rst_i <= (others => rst_active_value);     --(0,0,0);
              out_rst <= '0';
@@ -23,7 +24,7 @@ architecture behave of rst_async_sync is
             for i in 0 to rst_width-1 loop 
              sys_rst_i(i+1) <= sys_rst_i(i);                --(0,1,1), (1,1,1);
              end loop; 
-         end if;
-         out_rst <= sys_rst_i(rst_width-1);               
+         end if;             
     end process asyn_ass;
 end behave;
+

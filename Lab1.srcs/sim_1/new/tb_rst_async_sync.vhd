@@ -36,3 +36,4 @@ constant clk_time : time :=  7 us;
             severity failure;
      end process control;
 end behave;  
+
