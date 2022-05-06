@@ -2,11 +2,11 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Sun Apr 24 11:15:36 2022
-# Process ID: 13860
+# Start of session at: Fri May  6 10:31:42 2022
+# Process ID: 4312
 # Current directory: C:/Xilinx_clase/Lab1/Lab1.runs/synth_1
-# Command line: vivado.exe -log antirrebote.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source antirrebote.tcl
-# Log file: C:/Xilinx_clase/Lab1/Lab1.runs/synth_1/antirrebote.vds
+# Command line: vivado.exe -log freq_divider.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source freq_divider.tcl
+# Log file: C:/Xilinx_clase/Lab1/Lab1.runs/synth_1/freq_divider.vds
 # Journal file: C:/Xilinx_clase/Lab1/Lab1.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
-source antirrebote.tcl -notrace
+source freq_divider.tcl -notrace

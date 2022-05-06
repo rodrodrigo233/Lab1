@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu May  5 18:20:06 2022
+# Process ID: 6168
+# Current directory: C:/Xilinx_clase/Lab1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13824 C:\Xilinx_clase\Lab1\Lab1.xpr
+# Log file: C:/Xilinx_clase/Lab1/vivado.log
+# Journal file: C:/Xilinx_clase/Lab1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Xilinx_clase/Lab1/Lab1.xpr
+synth_design -rtl -name rtl_1
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+refresh_design
+refresh_design

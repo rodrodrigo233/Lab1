@@ -1,0 +1,19 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Lab1.srcs/sources_1/new/LFSR.vhd" \
+"../../../../Lab1.srcs/sources_1/new/rst_async_sync.vhd" \
+"../../../../Lab1.srcs/sources_1/new/Arrebote.vhd" \
+"../../../../Lab1.srcs/sources_1/new/FFD.vhd" \
+"../../../../Lab1.srcs/sources_1/new/Sincronizador.vhd" \
+"../../../../Lab1.srcs/sources_1/new/freq_divider.vhd" \
+"../../../../Lab1.srcs/sources_1/new/pwm.vhd" \
+"../../../../Lab1.srcs/sim_1/new/test_lfsr.vhd" \
+"../../../../Lab1.srcs/sim_1/new/tb_rst_async_sync.vhd" \
+"../../../../Lab1.srcs/sim_1/new/tb_arrebote.vhd" \
+"../../../../Lab1.srcs/sim_1/new/tb_sinc.vhd" \
+"../../../../Lab1.srcs/sim_1/new/tb_freq_divider.vhd" \
+"../../../../Lab1.srcs/sim_1/new/TB_FF.vhd" \
+"../../../../Lab1.srcs/sim_1/new/tb_pwm.vhd" \
+
+# Do not sort compile order
+nosort

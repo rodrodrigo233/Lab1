@@ -1,6 +1,6 @@
 library ieee;
 use ieee.std_logic_1164.all;
-use ieee.numeric_std.all;
+use ieee.numeric_std.all;  
 
 entity LFSR is
 generic (width: integer:=32);
@@ -46,18 +46,15 @@ signal out_xor : std_logic;
             end case;
          
          
---         if(rst='1') then
---            q_lfsr_b<=initial_value;
---            s<=initial_value;
---         elsif(rising_edge(clk)) then
---            for i in 31 downto 1 loop
---            s(i-1) <= s(i);
---            end loop;
---         end if;
+         if(rst='0') then
+            --q_lfsr_b<=initial_value;
+            s<=initial_value;
+         elsif(rising_edge(clk)) then
+            for i in 31 downto 1 loop
+            s(i-1) <= s(i);
+            end loop;
+         end if;
+         q_lfsr_b<=s; 
         end process;
-           
-            
-               
-          
-             
+         
 end beh;
