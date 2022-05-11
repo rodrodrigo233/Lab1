@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1652195793">
-  <File Type="PA-TCL" Name="freq_divider.tcl"/>
-  <File Type="REPORTS-TCL" Name="freq_divider_reports.tcl"/>
-  <File Type="RDS-RDS" Name="freq_divider.vds"/>
-  <File Type="RDS-UTIL" Name="freq_divider_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="freq_divider_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="freq_divider.dcp"/>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1652282567">
+  <File Type="PA-TCL" Name="PARTE_F.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="PARTE_F_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="PARTE_F_reports.tcl"/>
+  <File Type="RDS-RDS" Name="PARTE_F.vds"/>
+  <File Type="RDS-UTIL" Name="PARTE_F_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="PARTE_F_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="PARTE_F.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="PARTE_F_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="PARTE_F_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/LFSR.vhd">
@@ -70,18 +73,33 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="freq_divider"/>
+      <Option Name="TopModule" Val="PARTE_F"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
     <File Path="$PPRDIR/../../unsj/Quinto Año/Digitales -FPGA/zedboard_master_XDC_RevC_D_v3.xdc">
       <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/new/pwm_constraint.xdc">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/new/parte_f_constraint.xdc">
+      <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>
     </File>
     <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/parte_f_constraint.xdc"/>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
   </FileSet>
@@ -92,7 +110,9 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

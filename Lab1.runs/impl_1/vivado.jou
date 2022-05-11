@@ -2,11 +2,11 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Tue May 10 12:17:19 2022
-# Process ID: 9780
+# Start of session at: Wed May 11 12:23:39 2022
+# Process ID: 6424
 # Current directory: C:/Xilinx_clase/Lab1/Lab1.runs/impl_1
-# Command line: vivado.exe -log freq_divider.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source freq_divider.tcl -notrace
-# Log file: C:/Xilinx_clase/Lab1/Lab1.runs/impl_1/freq_divider.vdi
+# Command line: vivado.exe -log PARTE_F.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source PARTE_F.tcl -notrace
+# Log file: C:/Xilinx_clase/Lab1/Lab1.runs/impl_1/PARTE_F.vdi
 # Journal file: C:/Xilinx_clase/Lab1/Lab1.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
-source freq_divider.tcl -notrace
+source PARTE_F.tcl -notrace

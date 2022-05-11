@@ -17,7 +17,7 @@ begin
     variable c_bcd: integer:=0;
         begin
             if(rst='0') then
-                s<="1111";
+                s<="0001";-- empiezo en 1 para que no haya drama con el bcd y no haya problema con
             elsif(rising_edge(clk))then
                 case en is 
                 when "00" => c_up:=c_up+1;

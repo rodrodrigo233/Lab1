@@ -11,7 +11,7 @@ end pwm;
 architecture behave of pwm is
 begin 
 
-process(rst,load,clk)
+process(rst,load,clk,DC)
 variable ton,aux_on,toff,aux_off: integer :=0;
 variable flag : boolean :=true;
     begin
