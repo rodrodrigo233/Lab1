@@ -18,6 +18,7 @@ proc create_report { reportName command } {
   }
 }
 set_param chipscope.maxJobs 1
+set_param xicom.use_bs_reader 1
 set_msg_config  -id {Synth 8-614}  -string {{WARNING: [Synth 8-614] signal 'valor' is read in the process but is not in the sensitivity list [C:/Xilinx_clase/Lab1/Lab1.srcs/sources_1/new/Antirrebote.vhd:13]}}  -suppress 
 set_msg_config  -id {Synth 8-285}  -string {{ERROR: [Synth 8-285] failed synthesizing module 'Antirrebote_v2' [C:/Xilinx_clase/Lab1/Lab1.srcs/sources_1/new/Antirrebote_v2.vhd:10]}}  -suppress 
 set_msg_config  -id {Vivado_Tcl 4-5}  -string {{ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details}}  -suppress 
@@ -59,6 +60,8 @@ read_vhdl -library xil_defaultlib {
   C:/Xilinx_clase/Lab1/Lab1.srcs/sources_1/new/freq_divider.vhd
   C:/Xilinx_clase/Lab1/Lab1.srcs/sources_1/new/pwm.vhd
   C:/Xilinx_clase/Lab1/Lab1.srcs/sources_1/new/pwm_8.vhd
+  C:/Xilinx_clase/Lab1/Lab1.srcs/sources_1/new/bin_counter.vhd
+  C:/Xilinx_clase/Lab1/Lab1.srcs/sources_1/new/PARTE_F.vhd
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the

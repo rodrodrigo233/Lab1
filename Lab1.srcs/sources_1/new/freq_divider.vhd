@@ -2,11 +2,13 @@ library ieee;
 use ieee.std_logic_1164.all;
 
 entity freq_divider is
-generic ( time01 :integer :=83333333;    --0.1Hz
-     time05 :integer :=16666666;    --0.5Hz
-     time1 : integer :=8333333;     --1Hz
-    time2 : integer :=4166666;     --2Hz
-     time5 : integer :=1666666);     --5Hz
+
+generic ( time01 :integer :=166666666;    --0.1Hz
+          time05 :integer :=33333333;    --0.5Hz
+          time1 : integer :=16666666;     --1Hz
+          time2 : integer :=8333333;     --2Hz
+          time5 : integer :=3333333);     --5Hz
+
 port(
     clk,rst : in std_logic;     --33.3333MHZ   T=30ns
     sel : in std_logic_vector(2 downto 0);

@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Fri May  6 10:32:20 2022
+| Date         : Tue May 10 12:17:12 2022
 | Host         : DESKTOP-3K9NM8F running 64-bit major release  (build 9200)
 | Command      : report_utilization -file freq_divider_utilization_synth.rpt -pb freq_divider_utilization_synth.pb
 | Design       : freq_divider
@@ -146,13 +146,13 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| LUT2     |   41 |                 LUT |
 | FDCE     |   39 |        Flop & Latch |
+| LUT2     |   38 |                 LUT |
 | CARRY4   |   20 |          CarryLogic |
 | LUT5     |   18 |                 LUT |
+| LUT4     |    8 |                 LUT |
 | IBUF     |    5 |                  IO |
-| LUT4     |    4 |                 LUT |
-| LUT3     |    3 |                 LUT |
+| LUT3     |    2 |                 LUT |
 | OBUF     |    1 |                  IO |
 | LUT1     |    1 |                 LUT |
 | BUFG     |    1 |               Clock |

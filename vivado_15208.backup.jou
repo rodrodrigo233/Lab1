@@ -1,0 +1,75 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue May 10 11:34:07 2022
+# Process ID: 15208
+# Current directory: C:/Xilinx_clase/Lab1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16316 C:\Xilinx_clase\Lab1\Lab1.xpr
+# Log file: C:/Xilinx_clase/Lab1/vivado.log
+# Journal file: C:/Xilinx_clase/Lab1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Xilinx_clase/Lab1/Lab1.xpr
+launch_simulation
+open_wave_config C:/Xilinx_clase/Lab1/arreboteflcpostitivo.wcfg
+open_wave_config C:/Xilinx_clase/Lab1/partea.wcfg
+source tb_freq_divider.tcl
+restart
+run 300 ms
+run 300 ms
+close_sim
+launch_simulation
+open_wave_config C:/Xilinx_clase/Lab1/arreboteflcpostitivo.wcfg
+open_wave_config C:/Xilinx_clase/Lab1/partea.wcfg
+source tb_freq_divider.tcl
+restart
+run 600 ms
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Xilinx_clase/Lab1/Lab1.runs/impl_1/freq_divider.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Xilinx_clase/Lab1/Lab1.runs/impl_1/freq_divider.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+close_hw
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Xilinx_clase/Lab1/Lab1.runs/impl_1/freq_divider.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Xilinx_clase/Lab1/Lab1.runs/impl_1/freq_divider.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Xilinx_clase/Lab1/Lab1.runs/impl_1/freq_divider.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Xilinx_clase/Lab1/Lab1.runs/impl_1/freq_divider.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+close_sim

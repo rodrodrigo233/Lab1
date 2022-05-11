@@ -5,13 +5,13 @@ entity test_lfsr is
 end test_lfsr;
 
 architecture tb of test_lfsr is
-    constant clk_time : time :=10 us;
+    constant clk_time : time :=500 ns;
     signal clk1 : std_logic:='1';
     signal rst1 : std_logic:='0';
-    signal sel1:  std_logic_vector(1 downto 0):="00";
+    signal sel1:  std_logic_vector(1 downto 0):="11";
     signal q_lfsr_b1:  std_logic_vector(31 downto 0);
 begin
-    uut: entity work.LFSR port map(clk=>clk1,rst=>rst1,sel=>sel1,q_lfsr_b=>q_lfsr_b1);
+    uut: entity work.lfsr port map(clk=>clk1,rst=>rst1,sel=>sel1,q_lfsr=>q_lfsr_b1);
 process
     begin
         clk1<= not clk1;
@@ -20,10 +20,11 @@ process
     
     process
         begin
-            wait for 5 us;
+            wait for 1 us;
             rst1<='1';
-            sel1<="00";
-            wait until q_lfsr_b1="10100010101011001010010001010110";
+            --sel1<="01";
+            wait until q_lfsr_b1="10000000000000000000000000000000";
+            --wait for  5000000 ms;
             assert false
                     report "Simulación Terminada"
                     severity failure;
