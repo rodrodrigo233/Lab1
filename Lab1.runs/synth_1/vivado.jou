@@ -2,11 +2,11 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Wed May 11 12:22:56 2022
-# Process ID: 9068
+# Start of session at: Wed May 18 11:17:03 2022
+# Process ID: 6660
 # Current directory: C:/Xilinx_clase/Lab1/Lab1.runs/synth_1
-# Command line: vivado.exe -log PARTE_F.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source PARTE_F.tcl
-# Log file: C:/Xilinx_clase/Lab1/Lab1.runs/synth_1/PARTE_F.vds
+# Command line: vivado.exe -log pwm_8.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source pwm_8.tcl
+# Log file: C:/Xilinx_clase/Lab1/Lab1.runs/synth_1/pwm_8.vds
 # Journal file: C:/Xilinx_clase/Lab1/Lab1.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
-source PARTE_F.tcl -notrace
+source pwm_8.tcl -notrace

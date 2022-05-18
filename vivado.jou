@@ -2,31 +2,12 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Tue May 10 19:17:49 2022
-# Process ID: 11352
+# Start of session at: Wed May 11 12:39:15 2022
+# Process ID: 1668
 # Current directory: C:/Xilinx_clase/Lab1
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13252 C:\Xilinx_clase\Lab1\Lab1.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11548 C:\Xilinx_clase\Lab1\Lab1.xpr
 # Log file: C:/Xilinx_clase/Lab1/vivado.log
 # Journal file: C:/Xilinx_clase/Lab1\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project C:/Xilinx_clase/Lab1/Lab1.xpr
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top pwm [current_fileset]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode DisplayOnly [current_project]
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top tb_pwm [get_filesets sim_1]
-set_property top_lib xil_defaultlib [get_filesets sim_1]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode DisplayOnly [current_project]
-launch_simulation
-open_wave_config C:/Xilinx_clase/Lab1/arreboteflcpostitivo.wcfg
-open_wave_config C:/Xilinx_clase/Lab1/partea.wcfg
-source tb_pwm.tcl
-current_wave_config {partea.wcfg}
-add_wave {{/tb_pwm/uut}} 
-run all
-close_sim

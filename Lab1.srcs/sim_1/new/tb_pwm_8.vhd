@@ -21,14 +21,15 @@ uut: entity work.pwm_8 port map(rst=>rst1,clk=>clk1,load=> load1,output=>output1
         rst1<='1';
         wait for 2 us;
         rst1<='0';
-        load1<='1';
+        load1<='1';         -- se cargan todos los Duty Cicle
         wait for 2 us;
         load1<='0';
-        wait for 12000 ms;
+        wait for 1 ms;  -- se simula 1 ms para ver varios ciclos
         assert false
             report "Simulación terminada"
             severity failure;
     end process control;
 
-
 end tb;
+
+

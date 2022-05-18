@@ -9,7 +9,7 @@ end Arrebote;
 
 architecture behave of Arrebote is
 signal flag,clr:std_logic;          --Flag es el indicador de que hubo un cambio en la entrada
-constant tiempo_rebote : integer :=666666;
+constant tiempo_rebote : integer :=666666;  -- cantidad de ciclos necesarios para lograr 40 ms de delay
 begin                               -- clr es el encargado de limpiar el flag cuando cambia la salida
     process(clk,input,clr,rst)
 variable c: integer :=0;            -- variable de conteo para la espera 
@@ -21,7 +21,7 @@ variable c: integer :=0;            -- variable de conteo para la espera
                        output<=input;
                        clr<='0';
                        c:=0;
-                    end if;
+                    end if; 
                 end if;
              elsif(rst='0')then
                 output<='0';

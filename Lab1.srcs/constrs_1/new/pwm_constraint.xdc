@@ -80,7 +80,7 @@
 # Clock Source - Bank 13
 # ---------------------------------------------------------------------------- 
 set_property PACKAGE_PIN Y9 [get_ports {clk}];  # "GCLK"
-set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets rst_IBUF];
+#set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets rst_IBUF];
 # ----------------------------------------------------------------------------
 # JA Pmod - Bank 13
 # ---------------------------------------------------------------------------- 

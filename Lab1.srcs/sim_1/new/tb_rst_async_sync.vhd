@@ -10,7 +10,7 @@ signal clk1 :std_logic := '0';
 constant clk_time : time :=  7 us;
     begin
     uut: entity work.rst_async_sync port map(clk=>clk1,rst=>rst1,out_rst=>out_rst1);
-    clock: process
+    clock: process              --clock de 14 us de periodo
         begin
             clk1<=not (clk1);
             wait for clk_time;
@@ -21,16 +21,17 @@ constant clk_time : time :=  7 us;
          wait for 5us;
          rst1<='1'; 
          wait for 5 us;
-         rst1<='0';
+         rst1<='0';         --se aplica reset asincrónico
          wait for 5 us;
          rst1<='1';
-         wait for 50 us;
+         wait for 45 us;
          assert out_rst1='1'
             report "Funciona Mal"
             severity note;
          assert out_rst1='0'
             report "Funciona Bien"
             severity note;
+         wait for 50 us;
          assert false
             report "Simulacion terminada"
             severity failure;

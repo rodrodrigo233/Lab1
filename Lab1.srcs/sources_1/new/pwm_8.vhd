@@ -4,7 +4,7 @@ use ieee.std_logic_1164.all;
 
 entity pwm_8 is
 generic(
-        DC1:std_logic_vector(7 downto 0):="00000001";
+        DC1:std_logic_vector(7 downto 0):="00000001";       -- 8 Duty Cicle fijo
         DC2:std_logic_vector(7 downto 0):="00000010";
         DC3:std_logic_vector(7 downto 0):="00000100";
         DC4:std_logic_vector(7 downto 0):="00001000";
@@ -14,12 +14,12 @@ generic(
         DC8:std_logic_vector(7 downto 0):="10000000");       
 port (
         rst,clk,load: in std_logic;
-        output : out std_logic_vector(7 downto 0));  
+        output : out std_logic_vector(7 downto 0));         -- Vector de leds de salida
 end pwm_8;
 
 architecture beh of pwm_8 is
 type matrix is array (0 to 7) of std_logic_vector(7 downto 0);
-signal DC8x8: matrix :=(DC1,DC2,DC3,DC4,DC5,DC6,DC7,DC8);
+signal DC8x8: matrix :=(DC1,DC2,DC3,DC4,DC5,DC6,DC7,DC8);       --Se utiliza una matriz para la instanciación de Duty Cicle
     begin
     instance:for i in 7 downto 0 generate
         u:entity work.pwm port map(DC=>DC8x8(i),load=>load,clk=>clk,rst=>rst,pwm_out=>output(i));

@@ -1,73 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1652282567">
-  <File Type="BITSTR-BMM" Name="PARTE_F_bd.bmm"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="PARTE_F_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="PARTE_F_timing_summary_init.rpt"/>
-  <File Type="ROUTE-PWR" Name="PARTE_F_power_routed.rpt"/>
-  <File Type="PA-TCL" Name="PARTE_F.tcl"/>
-  <File Type="OPT-TIMING" Name="PARTE_F_timing_summary_opted.rpt"/>
-  <File Type="OPT-DCP" Name="PARTE_F_opt.dcp"/>
-  <File Type="ROUTE-PWR-SUM" Name="PARTE_F_power_summary_routed.pb"/>
-  <File Type="REPORTS-TCL" Name="PARTE_F_reports.tcl"/>
-  <File Type="OPT-DRC" Name="PARTE_F_drc_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="PARTE_F.hwdef"/>
-  <File Type="PWROPT-DCP" Name="PARTE_F_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="PARTE_F_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="PARTE_F_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-DCP" Name="PARTE_F_placed.dcp"/>
-  <File Type="PLACE-IO" Name="PARTE_F_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="PARTE_F_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="PARTE_F_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="PARTE_F_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="PARTE_F_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="PARTE_F_incremental_reuse_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="PARTE_F_incremental_reuse_pre_placed.rpt"/>
-  <File Type="BG-BGN" Name="PARTE_F.bgn"/>
-  <File Type="PLACE-TIMING" Name="PARTE_F_timing_summary_placed.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="PARTE_F_postplace_pwropt.dcp"/>
-  <File Type="BG-BIN" Name="PARTE_F.bin"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="PARTE_F_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="PARTE_F_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="PARTE_F_drc_physopted.rpt"/>
-  <File Type="BITSTR-MSK" Name="PARTE_F.msk"/>
-  <File Type="PHYSOPT-TIMING" Name="PARTE_F_timing_summary_physopted.rpt"/>
-  <File Type="ROUTE-ERROR-DCP" Name="PARTE_F_routed_error.dcp"/>
-  <File Type="ROUTE-DCP" Name="PARTE_F_routed.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="PARTE_F_routed_bb.dcp"/>
-  <File Type="ROUTE-DRC" Name="PARTE_F_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="PARTE_F_drc_routed.pb"/>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1652883420">
+  <File Type="BITSTR-BMM" Name="pwm_8_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="pwm_8_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="pwm_8_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="pwm_8_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="pwm_8.tcl"/>
+  <File Type="OPT-TIMING" Name="pwm_8_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="pwm_8_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="pwm_8_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="pwm_8_reports.tcl"/>
+  <File Type="OPT-DRC" Name="pwm_8_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="pwm_8.hwdef"/>
+  <File Type="PWROPT-DCP" Name="pwm_8_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="pwm_8_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="pwm_8_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="pwm_8_placed.dcp"/>
+  <File Type="PLACE-IO" Name="pwm_8_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="pwm_8_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="pwm_8_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="pwm_8_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="pwm_8_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="pwm_8_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="pwm_8_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="pwm_8.bgn"/>
+  <File Type="PLACE-TIMING" Name="pwm_8_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="pwm_8_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="pwm_8.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="pwm_8_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="pwm_8_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="pwm_8_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="pwm_8.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="pwm_8_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="pwm_8_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="pwm_8_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="pwm_8_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="pwm_8_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="pwm_8_drc_routed.pb"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="PARTE_F.ltx"/>
-  <File Type="ROUTE-DRC-RPX" Name="PARTE_F_drc_routed.rpx"/>
-  <File Type="BITSTR-MMI" Name="PARTE_F.mmi"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="PARTE_F_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="PARTE_F_methodology_drc_routed.rpx"/>
-  <File Type="BITSTR-SYSDEF" Name="PARTE_F.sysdef"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="PARTE_F_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-PWR-RPX" Name="PARTE_F_power_routed.rpx"/>
-  <File Type="ROUTE-STATUS" Name="PARTE_F_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="PARTE_F_route_status.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="PARTE_F_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-TIMING-PB" Name="PARTE_F_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="PARTE_F_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="PARTE_F_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="PARTE_F_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="PARTE_F_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="PARTE_F_bus_skew_routed.pb"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="PARTE_F_bus_skew_routed.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="PARTE_F_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="PARTE_F_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="PARTE_F_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="PARTE_F_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="PARTE_F_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="PARTE_F_bus_skew_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="PARTE_F_bus_skew_postroute_physopted.pb"/>
-  <File Type="BG-BIT" Name="PARTE_F.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="PARTE_F_bus_skew_postroute_physopted.rpx"/>
-  <File Type="BITSTR-RBT" Name="PARTE_F.rbt"/>
-  <File Type="BITSTR-NKY" Name="PARTE_F.nky"/>
-  <File Type="BG-DRC" Name="PARTE_F.drc"/>
-  <File Type="RDI-RDI" Name="PARTE_F.vdi"/>
+  <File Type="BITSTR-LTX" Name="pwm_8.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="pwm_8_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="pwm_8.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="pwm_8_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="pwm_8_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="pwm_8.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="pwm_8_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="pwm_8_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="pwm_8_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="pwm_8_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="pwm_8_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="pwm_8_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="pwm_8_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="pwm_8_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="pwm_8_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="pwm_8_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="pwm_8_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="pwm_8_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="pwm_8_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="pwm_8_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="pwm_8_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="pwm_8_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="pwm_8_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="pwm_8_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="pwm_8_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="pwm_8.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="pwm_8_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="pwm_8.rbt"/>
+  <File Type="BITSTR-NKY" Name="pwm_8.nky"/>
+  <File Type="BG-DRC" Name="pwm_8.drc"/>
+  <File Type="RDI-RDI" Name="pwm_8.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
@@ -133,7 +133,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="PARTE_F"/>
+      <Option Name="TopModule" Val="pwm_8"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
@@ -154,12 +154,12 @@
     </File>
     <File Path="$PSRCDIR/constrs_1/new/parte_f_constraint.xdc">
       <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
       </FileInfo>
     </File>
     <Config>
-      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/parte_f_constraint.xdc"/>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
   </FileSet>
@@ -170,9 +170,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
-      <Desc>Default settings for Implementation.</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>

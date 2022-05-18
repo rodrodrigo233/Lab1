@@ -25,8 +25,38 @@ clock: process
         llaves(3)<='0';
         llaves(2)<='0';
         --configuro en binario up
+        llaves(1)<='0';
+        llaves(0)<='0';
+        wait for 16000 ms;
+        
+        --configuro en binario down
+        rst1<='0';
+        llaves(1)<='0';
+        llaves(0)<='1';
+        wait for 1 ms;
+        rst1<='1';
+        wait for 16000 ms;
+        
+         --configuro en BCD
+        rst1<='0';
+        llaves(1)<='1';
+        llaves(0)<='0';
+        wait for 1 ms;
+        rst1<='1';
+        wait for 10000 ms;
+        
+         --configuro LFSR
+        rst1<='0';
         llaves(1)<='1';
         llaves(0)<='1';
-        wait for 16000 ms;
+        wait for 1 ms;
+        rst1<='1';
+        wait for 15000 ms;
+        
+        assert false
+            report "Simulación terminada"
+            severity failure;
+        
+        
         end process control;
 end tb;

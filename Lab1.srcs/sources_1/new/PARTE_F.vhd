@@ -4,8 +4,8 @@ use ieee.std_logic_1164.all;
 entity PARTE_F is
 port(
     clk,rst: in std_logic;
-    llave : in std_logic_vector(4 downto 0);
-    led: out std_logic_vector(3 downto 0));
+    llave : in std_logic_vector(4 downto 0);        --5 switches, 3 para elegir la frecuencia y 2 para el tipo de contador
+    led: out std_logic_vector(3 downto 0));         --4 leds de salida
 end PARTE_F;
 
 architecture beh of PARTE_F is
@@ -23,7 +23,4 @@ begin
        -- instancio modulo de ocntador binario up down bcd y lfsr de 4 bits
        counter: entity work.bin_counter port map(clk=>clk_i,rst=>rst_i,en(1)=>llave_i(1),en(0)=>llave_i(0),output=>led);
        
-       
-   
-    
 end beh;

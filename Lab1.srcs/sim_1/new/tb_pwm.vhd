@@ -11,40 +11,30 @@ signal pwm_out1 :  std_logic;
     begin
     uut: entity work.pwm port map (DC=>DC1,load=>load1,clk=>clk1,rst=>rst1,pwm_out=>pwm_out1);
     clock:process
-        begin
+        begin                   --clock de 1 us de periodo
         clk1<= not clk1;
-        wait for 1 us;
+        wait for 500 ns;
     end process;
     
     control: process
         begin
-        wait for 2 us;
-        DC1<="10001001";
+        wait for 1 us;              -- se prueban 3 cambios de ancgo de pulso
         rst1<='1';
-        load1<='0';
-        wait for 2 us;
+        wait for 1 us;
         rst1<='0';
-        wait for 2 us;
+        DC1<="00000110";
         load1<='1';
---        wait for 255 us;
---        assert pwm_out1='0'
---            report "Va bien"
---            severity Note;
---        assert pwm_out1='1'
---            report "Va mal"
---            severity Note;
---        wait for 10 us;
---        assert pwm_out1='1'
---            report "Va bien"
---            severity Note;
---        assert pwm_out1='0'
---            report "Va mal"
---            severity Note;
---         wait for 254 us;
---        assert pwm_out1='0'
---            report "Va bien"
---            severity Note;  
-        wait for 1000 us;
+        wait for 1 us;
+        load1<='0';
+        wait for 245 us;
+        load1<='1';
+        DC1<="00010000";
+        wait for 20 us;
+        load1<='0';
+        wait for 245 us;
+        load1<='1';
+        DC1<="10010000";
+        wait for 300 us;
         assert false
             report "Simulacion terminada"
             severity failure;

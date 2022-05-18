@@ -1,0 +1,159 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Wed May 18 11:18:59 2022
+| Host         : DESKTOP-3K9NM8F running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file pwm_8_control_sets_placed.rpt
+| Design       : pwm_8
+| Device       : xc7z020
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    81 |
+|    Minimum number of control sets                        |    81 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   408 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    81 |
+| >= 0 to < 4        |    48 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |    16 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    17 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               0 |            0 |
+| No           | No                    | Yes                    |              24 |           21 |
+| No           | Yes                   | No                     |              32 |           31 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |             576 |          150 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------------------------+--------------------------------------+-----------------------------------------+------------------+----------------+
+|               Clock Signal               |             Enable Signal            |             Set/Reset Signal            | Slice Load Count | Bel Load Count |
++------------------------------------------+--------------------------------------+-----------------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG                           |                                      | instance[7].u/aux_on_reg[7]_LDC_i_1_n_0 |                1 |              1 |
+|  instance[3].u/flag0                     |                                      | rst_IBUF_BUFG                           |                1 |              1 |
+|  instance[6].u/flag0                     |                                      | rst_IBUF_BUFG                           |                1 |              1 |
+|  instance[2].u/flag0                     |                                      | rst_IBUF_BUFG                           |                1 |              1 |
+|  instance[5].u/flag0                     |                                      | rst_IBUF_BUFG                           |                1 |              1 |
+|  clk_IBUF_BUFG                           | instance[5].u/pwm_out_i_1__5_n_0     | rst_IBUF_BUFG                           |                1 |              1 |
+|  clk_IBUF_BUFG                           | instance[4].u/aux_on[31]_i_1__4_n_0  | instance[4].u/aux_on_reg[4]_LDC_i_1_n_0 |                1 |              1 |
+|  instance[4].u/flag0                     |                                      | rst_IBUF_BUFG                           |                1 |              1 |
+|  clk_IBUF_BUFG                           | instance[1].u/pwm_out_i_1__1_n_0     | rst_IBUF_BUFG                           |                1 |              1 |
+|  instance[0].u/flag0                     |                                      | rst_IBUF_BUFG                           |                1 |              1 |
+|  clk_IBUF_BUFG                           | instance[5].u/aux_on[31]_i_1__5_n_0  | instance[5].u/aux_on_reg[5]_LDC_i_1_n_0 |                1 |              1 |
+|  instance[1].u/flag0                     |                                      | rst_IBUF_BUFG                           |                1 |              1 |
+|  clk_IBUF_BUFG                           | instance[0].u/aux_on[31]_i_1__0_n_0  | instance[0].u/aux_on_reg[0]_LDC_i_1_n_0 |                1 |              1 |
+|  instance[7].u/flag0                     |                                      | rst_IBUF_BUFG                           |                1 |              1 |
+|  clk_IBUF_BUFG                           |                                      | instance[3].u/aux_on_reg[3]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                           |                                      | instance[2].u/aux_on_reg[2]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                           |                                      | instance[5].u/aux_on_reg[5]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                           |                                      | instance[4].u/aux_on_reg[4]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                           |                                      | instance[0].u/aux_on_reg[0]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                           |                                      | instance[1].u/aux_on_reg[1]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                           | instance[0].u/pwm_out_i_1__0_n_0     | rst_IBUF_BUFG                           |                1 |              1 |
+|  clk_IBUF_BUFG                           | instance[1].u/aux_on[31]_i_1__1_n_0  | instance[1].u/aux_on_reg[1]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                           |                                      | instance[6].u/aux_on_reg[6]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                           | instance[6].u/pwm_out_i_1__6_n_0     | rst_IBUF_BUFG                           |                1 |              1 |
+|  clk_IBUF_BUFG                           | instance[3].u/aux_on[31]_i_1__3_n_0  | instance[3].u/aux_on_reg[3]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                           | instance[3].u/pwm_out_i_1__3_n_0     | rst_IBUF_BUFG                           |                1 |              1 |
+|  clk_IBUF_BUFG                           | instance[7].u/aux_on[31]_i_1_n_0     | instance[7].u/aux_on_reg[7]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                           | instance[7].u/pwm_out0               | rst_IBUF_BUFG                           |                1 |              1 |
+|  clk_IBUF_BUFG                           | instance[6].u/aux_on[31]_i_1__6_n_0  | instance[6].u/aux_on_reg[6]_LDC_i_1_n_0 |                1 |              1 |
+|  rst_IBUF_BUFG                           |                                      | instance[3].u/aux_on_reg[3]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                           | instance[2].u/aux_on[31]_i_1__2_n_0  | instance[2].u/aux_on_reg[2]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                           | instance[2].u/pwm_out_i_1__2_n_0     | rst_IBUF_BUFG                           |                1 |              1 |
+|  rst_IBUF_BUFG                           |                                      | instance[2].u/aux_on_reg[2]_LDC_i_1_n_0 |                1 |              1 |
+|  rst_IBUF_BUFG                           |                                      | instance[5].u/aux_on_reg[5]_LDC_i_1_n_0 |                1 |              1 |
+|  rst_IBUF_BUFG                           |                                      | instance[4].u/aux_on_reg[4]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_IBUF_BUFG                           | instance[4].u/pwm_out_i_1__4_n_0     | rst_IBUF_BUFG                           |                1 |              1 |
+|  rst_IBUF_BUFG                           |                                      | instance[0].u/aux_on_reg[0]_LDC_i_1_n_0 |                1 |              1 |
+|  rst_IBUF_BUFG                           |                                      | instance[1].u/aux_on_reg[1]_LDC_i_1_n_0 |                1 |              1 |
+|  rst_IBUF_BUFG                           |                                      | instance[7].u/aux_on_reg[7]_LDC_i_1_n_0 |                1 |              1 |
+|  rst_IBUF_BUFG                           |                                      | instance[6].u/aux_on_reg[6]_LDC_i_1_n_0 |                1 |              1 |
+|  instance[2].u/aux_on_reg[2]_LDC_i_1_n_0 |                                      | rst_IBUF_BUFG                           |                2 |              2 |
+|  instance[5].u/aux_on_reg[5]_LDC_i_1_n_0 |                                      | rst_IBUF_BUFG                           |                2 |              2 |
+|  instance[4].u/aux_on_reg[4]_LDC_i_1_n_0 |                                      | rst_IBUF_BUFG                           |                1 |              2 |
+|  instance[0].u/aux_on_reg[0]_LDC_i_1_n_0 |                                      | rst_IBUF_BUFG                           |                2 |              2 |
+|  instance[7].u/aux_on_reg[7]_LDC_i_1_n_0 |                                      | rst_IBUF_BUFG                           |                2 |              2 |
+|  instance[1].u/aux_on_reg[1]_LDC_i_1_n_0 |                                      | rst_IBUF_BUFG                           |                2 |              2 |
+|  instance[6].u/aux_on_reg[6]_LDC_i_1_n_0 |                                      | rst_IBUF_BUFG                           |                2 |              2 |
+|  instance[3].u/aux_on_reg[3]_LDC_i_1_n_0 |                                      | rst_IBUF_BUFG                           |                2 |              2 |
+|  clk_IBUF_BUFG                           | instance[6].u/aux_off[31]_i_1__6_n_0 | instance[6].u/aux_on_reg[6]_LDC_i_1_n_0 |                3 |              7 |
+|  clk_IBUF_BUFG                           | instance[0].u/aux_off[31]_i_1__0_n_0 | rst_IBUF_BUFG                           |                3 |              7 |
+|  clk_IBUF_BUFG                           | instance[4].u/aux_off[31]_i_1__4_n_0 | rst_IBUF_BUFG                           |                2 |              7 |
+|  clk_IBUF_BUFG                           | instance[2].u/aux_off[31]_i_1__2_n_0 | instance[2].u/aux_on_reg[2]_LDC_i_1_n_0 |                4 |              7 |
+|  clk_IBUF_BUFG                           | instance[2].u/aux_off[31]_i_1__2_n_0 | rst_IBUF_BUFG                           |                2 |              7 |
+|  clk_IBUF_BUFG                           | instance[1].u/aux_off[31]_i_1__1_n_0 | instance[1].u/aux_on_reg[1]_LDC_i_1_n_0 |                2 |              7 |
+|  clk_IBUF_BUFG                           | instance[3].u/aux_off[31]_i_1__3_n_0 | instance[3].u/aux_on_reg[3]_LDC_i_1_n_0 |                3 |              7 |
+|  clk_IBUF_BUFG                           | instance[1].u/aux_off[31]_i_1__1_n_0 | rst_IBUF_BUFG                           |                2 |              7 |
+|  clk_IBUF_BUFG                           | instance[3].u/aux_off[31]_i_1__3_n_0 | rst_IBUF_BUFG                           |                3 |              7 |
+|  clk_IBUF_BUFG                           | instance[7].u/aux_off[31]_i_1_n_0    | instance[7].u/aux_on_reg[7]_LDC_i_1_n_0 |                2 |              7 |
+|  clk_IBUF_BUFG                           | instance[5].u/aux_off[31]_i_1__5_n_0 | instance[5].u/aux_on_reg[5]_LDC_i_1_n_0 |                2 |              7 |
+|  clk_IBUF_BUFG                           | instance[5].u/aux_off[31]_i_1__5_n_0 | rst_IBUF_BUFG                           |                3 |              7 |
+|  clk_IBUF_BUFG                           | instance[4].u/aux_off[31]_i_1__4_n_0 | instance[4].u/aux_on_reg[4]_LDC_i_1_n_0 |                2 |              7 |
+|  clk_IBUF_BUFG                           | instance[7].u/aux_off[31]_i_1_n_0    | rst_IBUF_BUFG                           |                2 |              7 |
+|  clk_IBUF_BUFG                           | instance[0].u/aux_off[31]_i_1__0_n_0 | instance[0].u/aux_on_reg[0]_LDC_i_1_n_0 |                3 |              7 |
+|  clk_IBUF_BUFG                           | instance[6].u/aux_off[31]_i_1__6_n_0 | rst_IBUF_BUFG                           |                2 |              7 |
+|  clk_IBUF_BUFG                           |                                      | rst_IBUF_BUFG                           |               13 |             16 |
+|  clk_IBUF_BUFG                           | instance[2].u/aux_off[31]_i_1__2_n_0 | instance[2].u/aux_off[31]_i_3__2_n_0    |                7 |             25 |
+|  clk_IBUF_BUFG                           | instance[3].u/aux_off[31]_i_1__3_n_0 | instance[3].u/aux_off[31]_i_3__3_n_0    |                6 |             25 |
+|  clk_IBUF_BUFG                           | instance[5].u/aux_off[31]_i_1__5_n_0 | instance[5].u/aux_off[31]_i_3__5_n_0    |                5 |             25 |
+|  clk_IBUF_BUFG                           | instance[7].u/aux_off[31]_i_1_n_0    | instance[7].u/aux_off[31]_i_3_n_0       |                6 |             25 |
+|  clk_IBUF_BUFG                           | instance[6].u/aux_off[31]_i_1__6_n_0 | instance[6].u/aux_off[31]_i_3__6_n_0    |                6 |             25 |
+|  clk_IBUF_BUFG                           | instance[1].u/aux_off[31]_i_1__1_n_0 | instance[1].u/aux_off[31]_i_3__1_n_0    |                5 |             25 |
+|  clk_IBUF_BUFG                           | instance[4].u/aux_off[31]_i_1__4_n_0 | instance[4].u/aux_off[31]_i_3__4_n_0    |                6 |             25 |
+|  clk_IBUF_BUFG                           | instance[0].u/aux_off[31]_i_1__0_n_0 | instance[0].u/aux_off[31]_i_3__0_n_0    |                5 |             25 |
+|  clk_IBUF_BUFG                           | instance[3].u/aux_on[31]_i_1__3_n_0  | instance[3].u/aux_on[31]_i_3__3_n_0     |                7 |             31 |
+|  clk_IBUF_BUFG                           | instance[2].u/aux_on[31]_i_1__2_n_0  | instance[2].u/aux_on[31]_i_3__2_n_0     |                6 |             31 |
+|  clk_IBUF_BUFG                           | instance[0].u/aux_on[31]_i_1__0_n_0  | instance[0].u/aux_on[31]_i_3__0_n_0     |                6 |             31 |
+|  clk_IBUF_BUFG                           | instance[4].u/aux_on[31]_i_1__4_n_0  | instance[4].u/aux_on[31]_i_3__4_n_0     |                5 |             31 |
+|  clk_IBUF_BUFG                           | instance[7].u/aux_on[31]_i_1_n_0     | instance[7].u/aux_on[31]_i_3_n_0        |                6 |             31 |
+|  clk_IBUF_BUFG                           | instance[6].u/aux_on[31]_i_1__6_n_0  | instance[6].u/aux_on[31]_i_3__6_n_0     |                6 |             31 |
+|  clk_IBUF_BUFG                           | instance[1].u/aux_on[31]_i_1__1_n_0  | instance[1].u/aux_on[31]_i_3__1_n_0     |                7 |             31 |
+|  clk_IBUF_BUFG                           | instance[5].u/aux_on[31]_i_1__5_n_0  | instance[5].u/aux_on[31]_i_3__5_n_0     |                5 |             31 |
++------------------------------------------+--------------------------------------+-----------------------------------------+------------------+----------------+
+
+
